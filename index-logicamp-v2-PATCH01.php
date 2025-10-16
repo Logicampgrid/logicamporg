@@ -475,9 +475,9 @@ $gridStatus = "ONLINE";
                     <h5>Liens Rapides</h5>
                     <ul class="footer-links">
                         <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#apropos">À propos</a></li>
-                        <li><a href="//logicamp.org/be/tos.php">Conditions générales</a></li>
-                        <li><a href="https://logicamp.org/wordpress" target="_blank">Actualités</a></li>
+                        <li><a href="#apropos">A propos</a></li>
+                        <li><a href="//logicamp.org/be/tos.php">Conditions generales</a></li>
+                        <li><a href="https://logicamp.org/wordpress" target="_blank">Actualites</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
