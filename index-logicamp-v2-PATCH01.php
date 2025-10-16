@@ -496,7 +496,7 @@ $gridStatus = "ONLINE";
             <div class="row">
                 <div class="col-12 text-center">
                     <p class="copyright">
-                        Copyright © 2009-<?php echo date('Y'); ?> - Logicamp.org : Monde Virtuel 3D basé sur OpenSim
+                        Copyright &copy; 2009-<?php echo date('Y'); ?> - Logicamp.org : Monde Virtuel 3D base sur OpenSim
                     </p>
                 </div>
             </div>
