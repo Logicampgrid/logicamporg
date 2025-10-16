@@ -193,7 +193,7 @@ $gridStatus = "ONLINE";
                     </ul>
                 </li>
                 
-                <li><a href="https://logicamp.org/wordpress" target="_blank" class="nav-item"><i class="bi bi-newspaper"></i> Actualités</a></li>
+                <li><a href="https://logicamp.org/wordpress" target="_blank" class="nav-item"><i class="bi bi-newspaper"></i> Actualites</a></li>
             </ul>
             <!-- Menu burger pour mobile -->
             <button class="mobile-menu-toggle" id="mobileMenuToggle">
