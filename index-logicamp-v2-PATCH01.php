@@ -267,9 +267,9 @@ $gridStatus = "ONLINE";
                             <!-- Conditions -->
                             <div class="form-group">
                                 <small class="form-text">
-                                    En cliquant sur le bouton ci-dessous, je déclare avoir lu et accepté les 
-                                    <a href="//logicamp.org/be/tos.php" target="_blank">Conditions générales</a>. 
-                                    Je déclare aussi avoir 18 ans ou plus.
+                                    En cliquant sur le bouton ci-dessous, je declare avoir lu et accepte les 
+                                    <a href="//logicamp.org/be/tos.php" target="_blank">Conditions generales</a>. 
+                                    Je declare aussi avoir 18 ans ou plus.
                                 </small>
                             </div>
                             
