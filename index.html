@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Logicamp.org | The Outdoor Metaverse | Monde Virtuel 3D | OpenSimulator Metaverse</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom Modern CSS -->
+    <link rel="stylesheet" href="style-modern.css" type="text/css">
+</head>
+<body>
+
+    <!-- Navigation moderne -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">LOGI<span class="brand-highlight">CAMP</span></span>
+                <span class="brand-subtitle">The Outdoor Metaverse</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inscription">Inscription</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutoriels">Tutoriels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://logicamp.org/wordpress" target="_blank">Actualités</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec Slideshow -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-slideshow">
+            <img id="animation" src="https://via.placeholder.com/1920x1080/0a0e27/00d4ff?text=LOGICAMP+METAVERSE" class="hero-image" alt="Logicamp Metaverse">
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            Bienvenue dans le <span class="text-gradient">Métavers</span> du Futur
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Préparer le futur • Créer • Explorer • Connecter
+                        </p>
+                        <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                            <a href="#inscription" class="btn btn-primary btn-lg me-3">
+                                <i class="bi bi-rocket-takeoff me-2"></i>Commencer Gratuitement
+                            </a>
+                            <a href="#apropos" class="btn btn-outline-light btn-lg">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Formulaire d'inscription moderne -->
+                        <div class="registration-card" id="inscription" data-aos="fade-left">
+                            <div class="card-glow"></div>
+                            <h3 class="text-center mb-4">
+                                <i class="bi bi-person-plus-fill me-2"></i>Inscription GRATUITE
+                            </h3>
+                            <form name="form" action="#" method="POST">
+                                <!-- Sélection Avatar -->
+                                <div class="avatar-selection mb-4">
+                                    <div class="row text-center">
+                                        <div class="col-6">
+                                            <label class="avatar-option">
+                                                <input type="radio" id="genre1" checked name="genre" value="paul">
+                                                <img class="avatar-img" src="https://via.placeholder.com/150/667eea/ffffff?text=Paul" alt="Avatar Paul">
+                                                <span class="avatar-label">Paul</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="avatar-option">
+                                                <input type="radio" id="genre2" name="genre" value="suki">
+                                                <img class="avatar-img" src="https://via.placeholder.com/150/f093fb/ffffff?text=Suki" alt="Avatar Suki">
+                                                <span class="avatar-label">Suki</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Champs du formulaire -->
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="accountfirst" name="accountfirst" placeholder="Prénom" maxlength="15" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                                        <input type="text" class="form-control" id="accountlast" name="accountlast" placeholder="Nom" maxlength="15" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="wordpass" name="wordpass" placeholder="Mot de passe" maxlength="15" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" maxlength="40" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Captcha mathématique -->
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">
+                                        <span id="captcha-question">5 + 3 = ?</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="answer" name="answer" placeholder="Votre réponse" required>
+                                </div>
+                                
+                                <!-- Conditions générales -->
+                                <div class="mb-3">
+                                    <small class="text-muted">
+                                        En cliquant sur le bouton ci-dessous, je déclare avoir lu et accepté les 
+                                        <a href="#" class="link-primary">Conditions générales</a>. 
+                                        Je déclare aussi avoir 18 ans ou plus.
+                                    </small>
+                                </div>
+                                
+                                <!-- Bouton d'inscription -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-success btn-lg">
+                                        <i class="bi bi-check-circle me-2"></i>S'inscrire Gratuitement
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h2 class="section-title">Qu'est-ce que Logicamp ?</h2>
+                        <div class="text-content">
+                            <p class="lead">
+                                Logicamp n'est pas un site internet, c'est un <strong class="text-gradient">METAVERSE</strong>, 
+                                un monde virtuel en 3D, un jeu gratuit en ligne ou plutôt un monde numérique 3D en ligne 
+                                imaginé et créé par ses résidents.
+                            </p>
+                            <p>
+                                C'est aussi ce que les spécialistes ont qualifié de 
+                                <a href="http://fr.wikipedia.org/wiki/M%C3%A9tavers" target="_blank" class="link-primary">métavers</a> 
+                                (terme inventé par Neal Stephenson dans son roman "Le Samouraï virtuel", qui traite de l'évolution 
+                                d'un monde virtuel en une réalité tangible. Le métavers regroupe à la fois les multivers et tous 
+                                les univers passés et présents).
+                            </p>
+                            <p>
+                                Logicamp est basé sur le serveur de monde virtuel 
+                                <a href="http://opensimulator.org/" target="_blank" class="link-primary">OpenSimulator</a>, 
+                                The Free Metaverse, dans lequel la quasi-totalité du contenu est créé par les utilisateurs, 
+                                des gens comme vous.
+                            </p>
+                        </div>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-link-45deg info-icon"></i>
+                                    <h5>HyperGrid Link</h5>
+                                    <code>secondlife://logicamp.org:8002:accueil/</code>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    <i class="bi bi-server info-icon"></i>
+                                    <h5>LoginURI</h5>
+                                    <code>http://logicamp.org:8002</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéos & Tutoriels -->
+    <section id="tutoriels" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Découvrez Logicamp en Direct</h2>
+            
+            <!-- YouTube Tutorial -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="video-card">
+                        <h3 class="mb-3">
+                            <i class="bi bi-youtube text-danger me-2"></i>
+                            Inscription, téléchargement et configuration du viewer
+                        </h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/PCI3Gozzf78" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Recommandations -->
+    <section class="section-dark py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-star-fill text-warning me-2"></i>Recommandations
+            </h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial-card">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="testimonial-text">
+                            "Logicamp has been an awesome space to create and develop my educational projects."
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial-card">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="testimonial-text">
+                            "I recommend Logicamp for anyone who wants to start his own region at a very decent price. 
+                            The server is hypergrid enabled, the technical support is very friendly and the owner is running 
+                            it the best he can. Mainly Logicamp it's very user friendly. Give it a try."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Donations -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">
+                        <i class="bi bi-heart-fill text-danger me-2"></i>Soutenez Logicamp
+                    </h2>
+                    <div class="donation-card">
+                        <p class="lead mb-4">
+                            Logicamp survit grâce aux donations et à votre générosité. Merci de faire un don pour la 
+                            maintenance des serveurs et pour que ce service puisse continuer à exister.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg">
+                            <i class="bi bi-paypal me-2"></i>Faire un don via PayPal
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Logos Partenaires -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="partners-section">
+                        <h4 class="text-center mb-4">Nos Partenaires</h4>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                            <div class="partner-logo">
+                                <img src="https://via.placeholder.com/100x100/667eea/ffffff?text=OpenSim" alt="OpenSimulator">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="https://via.placeholder.com/200x100/7b2cbf/ffffff?text=HyperGrid" alt="HyperGrid Business">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="https://via.placeholder.com/100x100/00ff88/ffffff?text=VirWox" alt="VirWox">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="https://via.placeholder.com/120x100/00d4ff/ffffff?text=Partner" alt="Partner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer moderne -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">LOGICAMP</h5>
+                    <p class="footer-text">
+                        The Outdoor Metaverse<br>
+                        Monde Virtuel 3D basé sur OpenSimulator
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Liens Rapides</h5>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#inscription">Inscription</a></li>
+                        <li><a href="https://logicamp.org/wordpress">Actualités</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Suivez-nous</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitch"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        Copyright © 2023 - Logicamp.org : Monde Virtuel 3D basé sur OpenSim
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth Scroll & Navigation -->
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Navbar transparency on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Random captcha
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            const operators = ['+', '-', '*'];
+            const operator = operators[Math.floor(Math.random() * operators.length)];
+            document.getElementById('captcha-question').textContent = `${num1} ${operator} ${num2} = ?`;
+        }
+        generateCaptcha();
+    </script>
+</body>
+</html>
