@@ -336,10 +336,10 @@ $gridStatus = "ONLINE";
                             imagine et cree par ses residents.
                         </p>
                         <p>
-                            C'est aussi ce que les spécialistes ont qualifié de 
-                            <a href="http://fr.wikipedia.org/wiki/M%C3%A9tavers" target="_blank">métavers</a> 
-                            (terme inventé par Neal Stephenson dans son roman "Le Samouraï virtuel", qui traite de l'évolution 
-                            d'un monde virtuel en une réalité tangible).
+                            C'est aussi ce que les specialistes ont qualifie de 
+                            <a href="http://fr.wikipedia.org/wiki/M%C3%A9tavers" target="_blank">metavers</a> 
+                            (terme invente par Neal Stephenson dans son roman "Le Samourai virtuel", qui traite de l'evolution 
+                            d'un monde virtuel en une realite tangible).
                         </p>
                         <p>
                             Logicamp est basé sur le serveur de monde virtuel 
