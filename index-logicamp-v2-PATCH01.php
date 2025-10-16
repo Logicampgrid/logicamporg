@@ -387,7 +387,7 @@ $gridStatus = "ONLINE";
         </div>
     </section>
 
-    <!-- Section Tutoriaux / Vidéos -->
+    <!-- Section Tutoriaux / Videos -->
     <section id="tutoriaux" class="tutorials-section">
         <div class="container">
             <h2 class="section-title">Tutoriels & Vidéos</h2>
