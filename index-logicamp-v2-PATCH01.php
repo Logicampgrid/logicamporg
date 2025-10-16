@@ -44,7 +44,7 @@ $gridStatus = "ONLINE";
     <link rel="canonical" href="https://logicamp.org/">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="KEYWORDS" content="jeux, jeu, jeu gratuit, jeu gratuit en ligne, jeu gratuit de monde virtuel, jeux online, monde virtuel, monde virtuel 3D, monde virtuel en ligne, monde virtuel en 3D, monde virtuel gratuit, secondlife, opensim, opensimulator, hypergrid">
-    <meta name="DESCRIPTION" content="Logicamp est un METAVERSE ou monde virtuel basé sur OpenSimulator - The Outdoor Metaverse(OpenSimulator) et compatible avec SecondLife - Inscription gratuite - Terrains virtuels Low-Cost">
+    <meta name="DESCRIPTION" content="Logicamp est un METAVERSE ou monde virtuel base sur OpenSimulator - The Outdoor Metaverse(OpenSimulator) et compatible avec SecondLife - Inscription gratuite - Terrains virtuels Low-Cost">
     <meta name="msvalidate.01" content="DA91DBE179159CAB5A25AA181C7F85E7" />
     <meta name="alexaVerifyID" content="pMn3JxN19Kx8g_7fa0oqvREwOqY">
     <meta name="google-site-verification" content="QDp-J7bB50FZ8lbcMx0CJPQiZKt3sA01ThAPAQh8d4E" />
