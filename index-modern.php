@@ -281,9 +281,9 @@ require_once "/wamp/www/settings/manager/RegionManager.php";
                         </div>
                         
                         <div class="text-center mt-4">
-                            <a href="http://www.dmca.com/Protection/Status.aspx?ID=5227d015-b6ad-4bfe-98a3-087e7861cbda" 
+                            <a href="http://www.dmca.com/Protection/Status.aspx?ID=logicamp-modern" 
                                title="DMCA.com Protection Status" class="dmca-badge">
-                                <img src="//images.dmca.com/Badges/_dmca_premi_badge_1.png?ID=5227d015-b6ad-4bfe-98a3-087e7861cbda" 
+                                <img src="//images.dmca.com/Badges/_dmca_premi_badge_1.png?ID=logicamp-modern" 
                                      alt="DMCA.com Protection Status">
                             </a>
                         </div>
