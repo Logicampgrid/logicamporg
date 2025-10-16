@@ -260,7 +260,7 @@ $gridStatus = "ONLINE";
                             <!-- Captcha -->
                             <div class="form-group">
                                 <label class="captcha-label" id="captcha-question">5 + 3 = ?</label>
-                                <input type="text" class="form-control" id="answer" name="answer" placeholder="Votre réponse" required>
+                                <input type="text" class="form-control" id="answer" name="answer" placeholder="Votre reponse" required>
                                 <input type="hidden" id="correctAnswer" name="correctAnswer">
                             </div>
                             
