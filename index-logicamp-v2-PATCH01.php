@@ -141,7 +141,7 @@ $gridStatus = "ONLINE";
                 <li class="dropdown">
                     <a href="#immo" class="nav-item"><i class="bi bi-building"></i> IMMO <i class="bi bi-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://logicamp.org/be/location/immo.php">Régions</a></li>
+                        <li><a href="https://logicamp.org/be/location/immo.php">Regions</a></li>
                         <li><a href="https://logicamp.org/be/location/immoland.php">Parcelles</a></li>
                     </ul>
                 </li>
