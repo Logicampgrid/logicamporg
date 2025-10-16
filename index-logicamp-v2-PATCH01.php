@@ -242,7 +242,7 @@ $gridStatus = "ONLINE";
                             
                             <!-- Champs formulaire -->
                             <div class="form-group">
-                                <input type="text" class="form-control" id="accountfirst" name="accountfirst" placeholder="Prénom" maxlength="15" required>
+                                <input type="text" class="form-control" id="accountfirst" name="accountfirst" placeholder="Prenom" maxlength="15" required>
                             </div>
                             
                             <div class="form-group">
