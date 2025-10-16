@@ -368,8 +368,8 @@ $gridStatus = "ONLINE";
                         <img src="//logicamp.org/img/logicantiq.jpg" alt="LogicAntiq" class="gallery-image" onerror="this.src='https://via.placeholder.com/400x300/996633/ffffff?text=LogicAntiq'">
                         <div class="gallery-content">
                             <h4>LogicAntiq</h4>
-                            <p>Antiquités virtuelles</p>
-                            <a href="#logicantiq" class="btn btn-explore">Explore Now</a>
+                            <p>Antiquites virtuelles</p>
+                            <a href="https://logicamp.org/logicantiq" class="btn btn-explore">Explore Now</a>
                         </div>
                     </div>
                 </div>
