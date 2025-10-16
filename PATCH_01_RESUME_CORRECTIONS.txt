@@ -1,0 +1,132 @@
+═══════════════════════════════════════════════════════════════════════════
+  PATCH DESIGN 01 - RESUME DES CORRECTIONS
+  Logicamp.org - The Outdoor Metaverse
+═══════════════════════════════════════════════════════════════════════════
+
+✅ CORRECTIONS EFFECTUEES :
+
+1. LOGO LOGOTSP1.GIF AJOUTE
+   ├─ Nouveau logo ajoute en haut a gauche du header
+   ├─ URL: https://logicamp.org/img/logotsp1.gif
+   ├─ Logo centre verticalement
+   ├─ Texte "Logicamp.org" centre sous le logo
+   └─ Tagline "The Outdoor Metaverse" centre
+
+2. NOM BOUTIQUE CORRIGE
+   ├─ Ancien: GizmoBDS
+   ├─ Nouveau: GizmoBBS (avec deux B)
+   └─ Texte mis a jour: "GizmoBBS.com - Love"
+
+3. IMAGES BOUTIQUES CORRIGEES
+   ├─ LogicAntiq:
+   │  ├─ Ancienne URL: //logicamp.org/img/logicantiq.jpg
+   │  └─ Nouvelle URL: https://logicamp.org/shopimg/logivantiq.jpg
+   │
+   └─ GizmoBBS:
+      ├─ Ancienne URL: //logicamp.org/img/gizmobds.jpg
+      └─ Nouvelle URL: https://logicamp.org/shopimg/gizmo2.jpg
+
+4. CHARGEMENT CONTINU RESOLU
+   ├─ Script slideshow ameliore
+   ├─ Verification element avant manipulation
+   ├─ URLs HTTPS au lieu de //
+   └─ Demarrage conditionnel apres chargement DOM
+
+───────────────────────────────────────────────────────────────────────────
+
+📦 FICHIERS MODIFIES :
+
+1. index-logicamp-v2-PATCH01.php
+   └─ Lignes modifiees: 77, 368, 378-381, 508-522
+
+2. style-logicamp-v2-PATCH01.css
+   └─ Lignes modifiees: 75-99 (logo section)
+
+───────────────────────────────────────────────────────────────────────────
+
+🚀 INSTALLATION :
+
+Option A - Test d'abord :
+   1. Uploader les fichiers sur le serveur WAMP
+   2. Tester: https://logicamp.org/index-logicamp-v2-PATCH01.php
+   3. Verifier toutes les corrections
+   4. Si OK, passer en production
+
+Option B - Direct en production :
+   1. Backup ancien fichier:
+      mv index-logicamp-v2.php index-logicamp-v2-OLD.php
+   
+   2. Activer nouveau fichier:
+      mv index-logicamp-v2-PATCH01.php index-logicamp-v2.php
+   
+   3. CSS:
+      mv style-logicamp-v2.css style-logicamp-v2-OLD.css
+      mv style-logicamp-v2-PATCH01.css style-logicamp-v2.css
+   
+   4. Vider le cache: Ctrl+Shift+R
+
+───────────────────────────────────────────────────────────────────────────
+
+✅ CHECKLIST DE VERIFICATION :
+
+Header:
+   [ ] Logo logotsp1.gif visible en haut
+   [ ] Texte "Logicamp.org" centre sous le logo
+   [ ] Tagline "The Outdoor Metaverse" centre
+   [ ] Les 3 elements alignes verticalement
+
+Boutiques:
+   [ ] Carte LogicAntiq s'affiche
+   [ ] Image LogicAntiq visible (logivantiq.jpg)
+   [ ] Carte GizmoBBS s'affiche avec nom correct (deux B)
+   [ ] Image GizmoBBS visible (gizmo2.jpg)
+
+Page:
+   [ ] Pas de spinner de chargement continu
+   [ ] Slideshow fonctionne (change toutes les 5 secondes)
+   [ ] Aucune erreur dans la console (F12)
+
+───────────────────────────────────────────────────────────────────────────
+
+🆘 EN CAS DE PROBLEME :
+
+Si logo ne s'affiche pas:
+   → Verifier URL: https://logicamp.org/img/logotsp1.gif
+   → Ouvrir directement dans le navigateur
+   → Si 404: le fichier n'existe pas sur le serveur
+
+Si images boutiques ne s'affichent pas:
+   → Verifier URLs:
+      • https://logicamp.org/shopimg/logivantiq.jpg
+      • https://logicamp.org/shopimg/gizmo2.jpg
+   → Des placeholders s'afficheront automatiquement si erreur
+
+Si spinner persiste:
+   → Ouvrir console (F12)
+   → Verifier erreurs JavaScript
+   → Verifier onglet Network pour requetes qui echouent
+   → Vider le cache: Ctrl+Shift+R
+
+───────────────────────────────────────────────────────────────────────────
+
+📄 DOCUMENTATION COMPLETE :
+
+Pour plus de details, consulter:
+   → PATCH_CORRECTIONS_BOUTIQUES.md (documentation complete)
+   → PATCH_DESIGN_01_INSTRUCTIONS.md (guide d'installation)
+
+───────────────────────────────────────────────────────────────────────────
+
+✅ PATCH DESIGN 01 TERMINE — PRET POUR COMMIT GITHUB
+
+Message de commit suggere:
+   
+   fix(design): PATCH 01 - Logo, boutiques GizmoBBS et spinner
+   
+   - Ajout logo logotsp1.gif centre dans header
+   - Correction nom boutique: GizmoBDS → GizmoBBS
+   - Correction URLs images boutiques (shopimg/)
+   - Amelioration script slideshow (fix spinner)
+   - Layout logo centre verticalement
+
+═══════════════════════════════════════════════════════════════════════════
