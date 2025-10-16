@@ -190,20 +190,11 @@ require_once "/wamp/www/settings/manager/RegionManager.php";
                                 
                                 <!-- Captcha mathématique -->
                                 <div class="mb-3">
-                                    <label class="form-label fw-bold">
-                                        <?php
-                                        session_start();
-                                        $num1 = rand(1, 10);
-                                        $num2 = rand(1, 10);
-                                        $operators = array("+", "-", "*");
-                                        $operator = $operators[rand(0, 2)];
-                                        $_SESSION["captcha"] = "$num1 $operator $num2";
-                                        eval("\$correctAnswer = ".$_SESSION["captcha"].";");
-                                        echo "$num1 $operator $num2 = ?";
-                                        ?>
+                                    <label class="form-label fw-bold" id="captcha-question">
+                                        <!-- Captcha généré par JavaScript -->
                                     </label>
                                     <input type="text" class="form-control" id="answer" name="answer" placeholder="Votre réponse" required>
-                                    <input type="hidden" id="correctAnswer" name="correctAnswer" value="<?=$correctAnswer?>">
+                                    <input type="hidden" id="correctAnswer" name="correctAnswer" value="">
                                 </div>
                                 
                                 <!-- Conditions générales -->
