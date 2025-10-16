@@ -506,13 +506,21 @@ $gridStatus = "ONLINE";
     <!-- Script Slideshow -->
     <script>
         function animate(){
-            document.getElementById('animation').src="//logicamp.org/img/slideshow/img"+frame+".png";
-            frame=((frame+1)%7);
+            var imgElement = document.getElementById('animation');
+            if(imgElement) {
+                imgElement.src="https://logicamp.org/img/slideshow/img"+frame+".png";
+                frame=((frame+1)%7);
+            }
             setTimeout(animate,5000);
         }
         
         var frame=1;
-        animate();
+        // Demarrer l'animation une fois la page chargee
+        if(document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', animate);
+        } else {
+            animate();
+        }
     </script>
 
     <!-- Bootstrap JS -->
