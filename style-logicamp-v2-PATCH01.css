@@ -74,13 +74,24 @@ img {
 
 .logo-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+.top-logo {
+    max-height: 80px;
+    width: auto;
+    display: block;
 }
 
 .main-logo {
     max-height: 60px;
     width: auto;
+}
+
+.logo-text {
+    text-align: center;
 }
 
 .logo-text h1 {
