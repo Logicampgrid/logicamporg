@@ -520,7 +520,7 @@ $gridStatus = "ONLINE";
     
     <!-- Scripts personnalises -->
     <script>
-        // Générer captcha
+        // Generer captcha
         function generateCaptcha() {
             const num1 = Math.floor(Math.random() * 10) + 1;
             const num2 = Math.floor(Math.random() * 10) + 1;
