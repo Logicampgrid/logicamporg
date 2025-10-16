@@ -26,7 +26,7 @@ require_once "/wamp/www/settings/structweb/Region.php";
 require_once "/wamp/www/settings/manager/RegionManager.php";
 */
 
-// Statistiques - Remplacez par vos vraies données depuis la base
+// Statistiques - Remplacez par vos vraies donnees depuis la base
 $usersInWorld = "1";
 $totalRegions = "133";
 $last30Days = "43"; // PATCH 01: Ajout statistique last 30 days
