@@ -301,7 +301,7 @@ $gridStatus = "ONLINE";
                     <div class="stat-card">
                         <i class="bi bi-globe stat-icon"></i>
                         <h3 class="stat-number"><?php echo $totalRegions; ?></h3>
-                        <p class="stat-description">Régions Totales</p>
+                        <p class="stat-description">Regions Totales</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-6 mb-3">
