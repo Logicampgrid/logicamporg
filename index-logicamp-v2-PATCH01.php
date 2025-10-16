@@ -308,7 +308,7 @@ $gridStatus = "ONLINE";
                     <div class="stat-card">
                         <i class="bi bi-person-check-fill stat-icon"></i>
                         <h3 class="stat-number"><?php echo $usersInWorld; ?></h3>
-                        <p class="stat-description">Utilisateurs Connectés</p>
+                        <p class="stat-description">Utilisateurs Connectes</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-6 mb-3">
