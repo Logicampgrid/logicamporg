@@ -462,7 +462,7 @@ $gridStatus = "ONLINE";
                 <div class="col-lg-4 mb-4">
                     <h5>LOGICAMP</h5>
                     <p>The Outdoor Metaverse<br>
-                       Monde Virtuel 3D basé sur OpenSimulator</p>
+                       Monde Virtuel 3D base sur OpenSimulator</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/logicamp" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/logicamp" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
