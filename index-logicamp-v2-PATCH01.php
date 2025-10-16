@@ -168,7 +168,7 @@ $gridStatus = "ONLINE";
                     <a href="#tutoriaux" class="nav-item"><i class="bi bi-book"></i> Tutoriaux <i class="bi bi-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="http://logicamp.org/be/opensim-tutorial/index.php">Index</a></li>
-                        <li><a href="http://logicamp.org/be/opensim-tutorial/opensim.php">Débutant</a></li>
+                        <li><a href="http://logicamp.org/be/opensim-tutorial/opensim.php">Debutant</a></li>
                         <li><a href="http://logicamp.org/be/opensim-tutorial/stylisme.php">Stylisme</a></li>
                         <li><a href="http://logicamp.org/be/opensim-tutorial/build.php">Build</a></li>
                         <li><a href="http://logicamp.org/be/opensim-tutorial/lsl.php">LSL</a></li>
