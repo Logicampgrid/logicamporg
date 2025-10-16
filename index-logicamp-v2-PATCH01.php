@@ -538,7 +538,7 @@ $gridStatus = "ONLINE";
             document.getElementById('correctAnswer').value = correctAnswer;
         }
         
-        // Générer au chargement
+        // Generer au chargement
         window.addEventListener('DOMContentLoaded', generateCaptcha);
         
         // Smooth scroll
