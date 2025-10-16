@@ -439,9 +439,9 @@ $gridStatus = "ONLINE";
             <h2 class="section-title">Support & Donations</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead">
-                        Logicamp survit grâce aux donations et à votre générosité. Merci de faire un don pour la 
-                        maintenance des serveurs et pour que ce service puisse continuer à exister.
+                        <p class="lead">
+                        Logicamp survit grace aux donations et a votre generosite. Merci de faire un don pour la 
+                        maintenance des serveurs et pour que ce service puisse continuer a exister.
                     </p>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="mt-4">
                         <input type="hidden" name="cmd" value="_s-xclick">
