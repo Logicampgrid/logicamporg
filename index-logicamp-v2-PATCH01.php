@@ -220,7 +220,7 @@ $gridStatus = "ONLINE";
                     <div class="registration-form">
                         <h3 class="form-title">Inscription GRATUITE</h3>
                         <form name="form" action="https://www.logicamp.org/inscription/formcheck.php" method="POST" onSubmit="return Form(this)">
-                            <!-- Sélection Avatar -->
+                            <!-- Selection Avatar -->
                             <div class="avatar-selection">
                                 <div class="row">
                                     <div class="col-6 text-center">
