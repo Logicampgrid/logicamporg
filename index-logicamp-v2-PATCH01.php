@@ -365,7 +365,7 @@ $gridStatus = "ONLINE";
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="gallery-card">
-                        <img src="//logicamp.org/img/logicantiq.jpg" alt="LogicAntiq" class="gallery-image" onerror="this.src='https://via.placeholder.com/400x300/996633/ffffff?text=LogicAntiq'">
+                        <img src="https://logicamp.org/shopimg/logivantiq.jpg" alt="LogicAntiq" class="gallery-image" onerror="this.src='https://via.placeholder.com/400x300/996633/ffffff?text=LogicAntiq'">
                         <div class="gallery-content">
                             <h4>LogicAntiq</h4>
                             <p>Antiquites virtuelles</p>
