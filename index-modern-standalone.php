@@ -517,6 +517,27 @@ require_once "/wamp/www/settings/manager/RegionManager.php";
     
     <!-- Smooth Scroll -->
     <script>
+        // Générer le captcha mathématique
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            const operators = ['+', '-', '*'];
+            const operator = operators[Math.floor(Math.random() * operators.length)];
+            
+            let correctAnswer;
+            switch(operator) {
+                case '+': correctAnswer = num1 + num2; break;
+                case '-': correctAnswer = num1 - num2; break;
+                case '*': correctAnswer = num1 * num2; break;
+            }
+            
+            document.getElementById('captcha-question').textContent = `${num1} ${operator} ${num2} = ?`;
+            document.getElementById('correctAnswer').value = correctAnswer;
+        }
+        
+        // Générer le captcha au chargement de la page
+        window.addEventListener('DOMContentLoaded', generateCaptcha);
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const target = document.querySelector(this.getAttribute('href'));
