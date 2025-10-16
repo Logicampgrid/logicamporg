@@ -2,136 +2,130 @@
 
 #########################################################
 # SCRIPT DE VALIDATION - LOGICAMP PATCH DESIGN 01
-# Vérifie que tous les fichiers sont présents et valides
+# Verifie que tous les fichiers sont presents et valides
 #########################################################
 
-echo \"\"
-echo \"╔════════════════════════════════════════════════════╗\"
-echo \"║   VALIDATION PATCH DESIGN 01 - LOGICAMP.ORG       ║\"
-echo \"╚════════════════════════════════════════════════════╝\"
-echo \"\"
-
-# Couleurs
-GREEN='\\033[0;32m'
-RED='\\033[0;31m'
-YELLOW='\\033[1;33m'
-NC='\\033[0m' # No Color
+echo ""
+echo "====================================================="
+echo "   VALIDATION PATCH DESIGN 01 - LOGICAMP.ORG       "
+echo "====================================================="
+echo ""
 
 # Compteurs
 TOTAL=0
 SUCCESS=0
 FAIL=0
 
-# Fonction de vérification
+# Fonction de verification
 check_file() {
     TOTAL=$((TOTAL + 1))
-    if [ -f \"$1\" ]; then
-        echo -e \"${GREEN}✓${NC} $2 existe\"
+    if [ -f "$1" ]; then
+        echo "[OK] $2 existe"
         SUCCESS=$((SUCCESS + 1))
         
-        # Vérifier la taille du fichier
-        SIZE=$(stat -f%z \"$1\" 2>/dev/null || stat -c%s \"$1\" 2>/dev/null)
+        # Verifier la taille du fichier
+        SIZE=$(stat -c%s "$1" 2>/dev/null || echo "0")
         if [ $SIZE -gt 0 ]; then
-            echo \"  └─ Taille: $(numfmt --to=iec-i --suffix=B $SIZE 2>/dev/null || echo \"${SIZE} octets\")\"
+            echo "     Taille: $SIZE octets"
         else
-            echo -e \"  ${YELLOW}⚠${NC} Fichier vide !\"
+            echo "     [WARNING] Fichier vide !"
         fi
     else
-        echo -e \"${RED}✗${NC} $2 manquant !\"
+        echo "[FAIL] $2 manquant !"
         FAIL=$((FAIL + 1))
     fi
 }
 
-echo \"📂 Vérification des fichiers du patch...\"
-echo \"\"
+echo "Verification des fichiers du patch..."
+echo ""
 
-# Vérification des fichiers principaux
-check_file \"./index-modern.php\" \"index-modern.php\"
-check_file \"./style-modern.css\" \"style-modern.css\"
+# Verification des fichiers principaux
+check_file "./index-modern.php" "index-modern.php"
+check_file "./style-modern.css" "style-modern.css"
 
-echo \"\"
-echo \"📄 Vérification de la documentation...\"
-echo \"\"
+echo ""
+echo "Verification de la documentation..."
+echo ""
 
-check_file \"./README.md\" \"README.md\"
-check_file \"./INSTRUCTIONS_INTEGRATION.md\" \"INSTRUCTIONS_INTEGRATION.md\"
-check_file \"./APERCU_DESIGN.md\" \"APERCU_DESIGN.md\"
-check_file \"./QUICK_START.md\" \"QUICK_START.md\"
+check_file "./README.md" "README.md"
+check_file "./INSTRUCTIONS_INTEGRATION.md" "INSTRUCTIONS_INTEGRATION.md"
+check_file "./APERCU_DESIGN.md" "APERCU_DESIGN.md"
+check_file "./QUICK_START.md" "QUICK_START.md"
 
-echo \"\"
-echo \"═════════════════════════════════════════════════════\"
-echo \"\"
+echo ""
+echo "====================================================="
+echo ""
 
-# Résultats
+# Resultats
 if [ $FAIL -eq 0 ]; then
-    echo -e \"${GREEN}✅ TOUS LES FICHIERS SONT PRÉSENTS !${NC}\"
-    echo \"\"
-    echo \"Vous pouvez procéder à l'installation :\"
-    echo \"1. Consultez QUICK_START.md pour un démarrage rapide\"
-    echo \"2. Ou INSTRUCTIONS_INTEGRATION.md pour le guide complet\"
+    echo "[SUCCESS] TOUS LES FICHIERS SONT PRESENTS !"
+    echo ""
+    echo "Vous pouvez proceder a l'installation :"
+    echo "1. Consultez QUICK_START.md pour un demarrage rapide"
+    echo "2. Ou INSTRUCTIONS_INTEGRATION.md pour le guide complet"
 else
-    echo -e \"${RED}❌ $FAIL fichier(s) manquant(s)${NC}\"
-    echo \"\"
-    echo \"Veuillez télécharger tous les fichiers du patch.\"
+    echo "[ERROR] $FAIL fichier(s) manquant(s)"
+    echo ""
+    echo "Veuillez telecharger tous les fichiers du patch."
 fi
 
-echo \"\"
-echo \"📊 Résultat : $SUCCESS/$TOTAL fichiers OK\"
-echo \"\"
+echo ""
+echo "Resultat : $SUCCESS/$TOTAL fichiers OK"
+echo ""
 
-# Vérification du contenu PHP (bonus)
-if [ -f \"./index-modern.php\" ]; then
-    echo \"🔍 Vérification rapide du contenu PHP...\"
+# Verification du contenu PHP (bonus)
+if [ -f "./index-modern.php" ]; then
+    echo "Verification rapide du contenu PHP..."
     
-    # Vérifier la présence de Bootstrap
-    if grep -q \"bootstrap@5\" \"./index-modern.php\"; then
-        echo -e \"${GREEN}✓${NC} Bootstrap 5 détecté\"
+    # Verifier la presence de Bootstrap
+    if grep -q "bootstrap@5" "./index-modern.php"; then
+        echo "[OK] Bootstrap 5 detecte"
     else
-        echo -e \"${YELLOW}⚠${NC} Bootstrap 5 non détecté\"
+        echo "[WARNING] Bootstrap 5 non detecte"
     fi
     
-    # Vérifier la présence du formulaire
-    if grep -q 'name=\"form\"' \"./index-modern.php\"; then
-        echo -e \"${GREEN}✓${NC} Formulaire d'inscription présent\"
+    # Verifier la presence du formulaire
+    if grep -q 'name="form"' "./index-modern.php"; then
+        echo "[OK] Formulaire d'inscription present"
     else
-        echo -e \"${RED}✗${NC} Formulaire d'inscription manquant\"
+        echo "[FAIL] Formulaire d'inscription manquant"
     fi
     
-    # Vérifier les includes PHP
-    if grep -q 'require_once' \"./index-modern.php\"; then
-        echo -e \"${GREEN}✓${NC} Includes PHP détectés\"
+    # Verifier les includes PHP
+    if grep -q 'require_once' "./index-modern.php"; then
+        echo "[OK] Includes PHP detectes"
     else
-        echo -e \"${RED}✗${NC} Includes PHP manquants\"
+        echo "[FAIL] Includes PHP manquants"
     fi
     
-    echo \"\"
+    echo ""
 fi
 
-# Vérification du CSS (bonus)
-if [ -f \"./style-modern.css\" ]; then
-    echo \"🎨 Vérification rapide du CSS...\"
+# Verification du CSS (bonus)
+if [ -f "./style-modern.css" ]; then
+    echo "Verification rapide du CSS..."
     
-    # Vérifier les variables CSS
-    if grep -q ':root' \"./style-modern.css\"; then
-        echo -e \"${GREEN}✓${NC} Variables CSS présentes\"
+    # Verifier les variables CSS
+    if grep -q ':root' "./style-modern.css"; then
+        echo "[OK] Variables CSS presentes"
     else
-        echo -e \"${YELLOW}⚠${NC} Variables CSS manquantes\"
+        echo "[WARNING] Variables CSS manquantes"
     fi
     
-    # Vérifier les media queries
-    if grep -q '@media' \"./style-modern.css\"; then
-        echo -e \"${GREEN}✓${NC} Media queries responsive présentes\"
+    # Verifier les media queries
+    if grep -q '@media' "./style-modern.css"; then
+        echo "[OK] Media queries responsive presentes"
     else
-        echo -e \"${RED}✗${NC} Media queries manquantes\"
+        echo "[FAIL] Media queries manquantes"
     fi
     
-    echo \"\"
+    echo ""
 fi
 
-echo \"═════════════════════════════════════════════════════\"
-echo \"\"
-echo \"💡 Prochaine étape :\"
-echo \"   Consultez QUICK_START.md pour l'installation rapide\"
-echo \"\"
-echo \"🚀 Bonne installation !\"
-echo \"\"
+echo "====================================================="
+echo ""
+echo "Prochaine etape :"
+echo "   Consultez QUICK_START.md pour l'installation rapide"
+echo ""
+echo "Bonne installation !"
+echo ""
