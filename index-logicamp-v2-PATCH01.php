@@ -390,7 +390,7 @@ $gridStatus = "ONLINE";
     <!-- Section Tutoriaux / Videos -->
     <section id="tutoriaux" class="tutorials-section">
         <div class="container">
-            <h2 class="section-title">Tutoriels & Vidéos</h2>
+            <h2 class="section-title">Tutoriels & Videos</h2>
             
             <div class="row">
                 <div class="col-lg-6 mb-4">
