@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 $OK=1;
 
-/* WAMP DEPENDENCIES - Décommentez sur votre serveur WAMP */
+/* WAMP DEPENDENCIES - Decommentez sur votre serveur WAMP */
 /*
 require_once("/wamp/www/settings/config.php");
 require_once("/wamp/www/settings/mysql.php");
