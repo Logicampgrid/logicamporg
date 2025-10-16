@@ -86,7 +86,7 @@ $gridStatus = "ONLINE";
                 <div class="col-md-6">
                     <div class="header-login-form">
                         <form action="https://www.logicamp.org/inscription/formcheck.php" method="POST" class="login-inline">
-                            <input type="text" name="username" placeholder="Prénom" class="form-control-sm" required>
+                            <input type="text" name="username" placeholder="Prenom" class="form-control-sm" required>
                             <input type="text" name="lastname" placeholder="Nom" class="form-control-sm" required>
                             <input type="password" name="password" placeholder="Mot de passe" class="form-control-sm" required>
                             <button type="submit" class="btn btn-sm btn-success">
