@@ -375,10 +375,10 @@ $gridStatus = "ONLINE";
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="gallery-card">
-                        <img src="//logicamp.org/img/gizmobds.jpg" alt="GizmoBDS" class="gallery-image" onerror="this.src='https://via.placeholder.com/400x300/cc3366/ffffff?text=GizmoBDS'">
+                        <img src="https://logicamp.org/shopimg/gizmo2.jpg" alt="GizmoBBS" class="gallery-image" onerror="this.src='https://via.placeholder.com/400x300/cc3366/ffffff?text=GizmoBBS'">
                         <div class="gallery-content">
-                            <h4>GizmoBDS</h4>
-                            <p>GizmoBDS.com - Love</p>
+                            <h4>GizmoBBS</h4>
+                            <p>GizmoBBS.com - Love</p>
                             <a href="http://gizmobds.com" target="_blank" class="btn btn-explore">Explore Now</a>
                         </div>
                     </div>
