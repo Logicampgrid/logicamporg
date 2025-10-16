@@ -342,9 +342,9 @@ $gridStatus = "ONLINE";
                             d'un monde virtuel en une realite tangible).
                         </p>
                         <p>
-                            Logicamp est basé sur le serveur de monde virtuel 
+                            Logicamp est base sur le serveur de monde virtuel 
                             <a href="http://opensimulator.org/" target="_blank">OpenSimulator</a>, 
-                            The Free Metaverse, dans lequel la quasi-totalité du contenu est créé par les utilisateurs, 
+                            The Free Metaverse, dans lequel la quasi-totalite du contenu est cree par les utilisateurs, 
                             des gens comme vous.
                         </p>
                     </div>
