@@ -227,7 +227,7 @@ $gridStatus = "ONLINE";
                                         <label class="avatar-choice">
                                             <input type="radio" name="genre" value="paul" checked>
                                             <img src="//logicamp.org/img/pub/leo1.png" alt="Avatar Paul" class="avatar-img" onerror="this.src='https://via.placeholder.com/80/0066cc/ffffff?text=Paul'">
-                                            <span>Prénom</span>
+                                            <span>Prenom</span>
                                         </label>
                                     </div>
                                     <div class="col-6 text-center">
