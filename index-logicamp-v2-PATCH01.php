@@ -130,7 +130,7 @@ $gridStatus = "ONLINE";
         </div>
     </header>
 
-    <!-- Navigation Menu - PATCH 01: Ajout menus déroulants -->
+    <!-- Navigation Menu - PATCH 01: Ajout menus deroulants -->
     <nav class="main-navigation">
         <div class="container-fluid">
             <ul class="nav-menu">
