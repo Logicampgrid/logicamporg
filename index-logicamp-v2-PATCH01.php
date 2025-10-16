@@ -332,8 +332,8 @@ $gridStatus = "ONLINE";
                     <div class="about-text">
                         <p class="lead">
                             Logicamp n'est pas un site internet, c'est un <strong>METAVERSE</strong>, 
-                            un monde virtuel en 3D, un jeu gratuit en ligne ou plutôt un monde numérique 3D en ligne 
-                            imaginé et créé par ses résidents.
+                            un monde virtuel en 3D, un jeu gratuit en ligne ou plutot un monde numerique 3D en ligne 
+                            imagine et cree par ses residents.
                         </p>
                         <p>
                             C'est aussi ce que les spécialistes ont qualifié de 
