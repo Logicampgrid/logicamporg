@@ -286,7 +286,7 @@ $gridStatus = "ONLINE";
         </div>
     </section>
 
-    <!-- Section Statistiques détaillées -->
+    <!-- Section Statistiques detaillees -->
     <section id="statistiques" class="stats-section">
         <div class="container">
             <div class="row text-center">
