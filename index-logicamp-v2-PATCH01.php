@@ -322,7 +322,7 @@ $gridStatus = "ONLINE";
         </div>
     </section>
 
-    <!-- Section À propos / Galerie -->
+    <!-- Section A propos / Galerie -->
     <section id="apropos" class="content-section">
         <div class="container">
             <h2 class="section-title">Découvrez Logicamp</h2>
