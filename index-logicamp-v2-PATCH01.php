@@ -74,7 +74,7 @@ $gridStatus = "ONLINE";
                 <!-- Logo -->
                 <div class="col-md-3">
                     <div class="logo-section">
-                        <img src="//logicamp.org/img/logicamp_logo.png" alt="Logicamp Logo" class="main-logo" onerror="this.style.display='none'">
+                        <img src="https://logicamp.org/img/logotsp1.gif" alt="Logicamp Logo" class="top-logo" onerror="this.style.display='none'">
                         <div class="logo-text">
                             <h1>Logicamp.org</h1>
                             <p class="tagline">The Outdoor Metaverse</p>
