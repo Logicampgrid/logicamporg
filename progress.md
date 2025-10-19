@@ -24,16 +24,16 @@ car l'ordinateur cible l'a expressément refusée
 - 🔍 Prochaine étape: Localiser le projet backend avec MongoDB
 
 ## 📝 État Actuel
-- Projet PHP Logicamp.org détecté dans /app
-- Recherche du projet backend avec MongoDB en cours
-- Besoin de localiser backend/, frontend/, ou le projet concerné par l'erreur MongoDB
+- ✅ Application webhook tourne sur **Windows local** (pas sur Emergent)
+- ✅ MongoDB disponible sur serveur Emergent (mais pas utilisé par l'app)
+- ❌ MongoDB **NON DÉMARRÉ** sur Windows local
+- 🎯 Solution: Démarrer MongoDB sur Windows
 
 ## 🎯 Prochaines Étapes
-1. Localiser le backend FastAPI/MongoDB
-2. Vérifier si MongoDB est installé
-3. Démarrer MongoDB via supervisor si disponible
-4. Tester la connexion
-5. Vérifier la configuration dans .env
+1. ✅ DIAGNOSTIQUÉ: Application Windows + MongoDB manquant
+2. 📝 Créer guide de démarrage MongoDB Windows
+3. 🔧 Instructions pour vérifier/démarrer MongoDB
+4. ✅ Valider la connexion
 
 ## 💾 Points de Rollback
 - PATCH 00: État initial - diagnostic
