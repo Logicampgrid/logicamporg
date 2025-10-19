@@ -13,7 +13,7 @@ car l'ordinateur cible l'a expressément refusée
 **Cause**: MongoDB n'est pas démarré ou n'écoute pas sur localhost:27017
 
 ## 📊 Crédits Utilisés
-- Session actuelle: **3/10 crédits** ✅
+- Session actuelle: **5/10 crédits** ✅
 
 ## 🔧 Patches Appliqués
 
@@ -22,6 +22,12 @@ car l'ordinateur cible l'a expressément refusée
 - ✅ Identification du problème: MongoDB non démarré
 - ✅ Création du fichier progress.md
 - 🔍 Prochaine étape: Localiser le projet backend avec MongoDB
+
+### PATCH 01 - Guide MongoDB Windows (Crédit 4-5)
+- ✅ Confirmation: Application tourne sur Windows local
+- ✅ Création du guide complet: PATCH_01_FIX_MONGODB_WINDOWS.md
+- 📝 Instructions détaillées pour démarrer MongoDB sur Windows
+- 🔧 Solutions alternatives (Service Windows / Manuel / Cloud)
 
 ## 📝 État Actuel
 - ✅ Application webhook tourne sur **Windows local** (pas sur Emergent)
